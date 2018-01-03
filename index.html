@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF8" name="viewport" content="width=device-width, user-scalable=no" />
+	<link rel="stylesheet" href="style.css">
+
+	<title>Summer Surf</title>
+
+</head>
+
+<body>
+
+
+	<div class="topnav" id="myTopnav">
+		<a href="index.html"><img id="top-image" src="http://www.saltywaytravel.com/wp-content/uploads/2015/12/logo.png"></a>
+		<a href="#infos">Informations</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+
+
+	<div class="container">
+
+
+
+		<div class="container-image">
+			<img src="https://www.bretagne-orages.com/wp-content/uploads/2015/07/bretagne-orages-paysages-1.jpg">
+		</div>
+
+		<div class="container-text" id="text-date">
+			<p>Gagne un voyage tout frais payés avec tes potes pour partir surfer à AgadirBay !</p>
+		</div>
+
+
+		<div class="container-back-color" id="infos">
+			<hr/>
+			<h2>Tu veux participer ? Alors remplis le formulaire !</h2>
+			<div id="container-flex-image">
+				<div id="container-image">
+					<img src="https://static.fnac-static.com/multimedia/Images/FD/Comete/70252/CCP_IMG_ORIGINAL/866491.jpg">
+				</div>
+
+				<div id="container-form" class="container-form">
+
+					<form onSubmit="alert('Votre participation est bien enregistrée !');">
+						<input id="input" type="text" name="firstname" placeholder="Prénom"><br>
+						<input id="input" type="text" name="lastname" placeholder="Nom"><br>
+						<input id="input" type="text" name="mail" placeholder="Adresse email"><br>
+						<br>
+						<input type="submit" value="Envoi">
+					</form>
+				</div>
+
+			</div>
+			<hr/>
+		</div>
+
+</body>
+
+</html>
